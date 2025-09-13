@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Bubble_sort {
     
     static void sort(int[] arr,int r, int c) {
-        if (c>=r) {
+        if (r==0) {
             return;
         }
         if (c<r) {
@@ -13,8 +13,8 @@ public class Bubble_sort {
                 int temp = arr[c+1];
                 arr[c+1]= arr[c];
                 arr[c]= temp;
-                sort(arr, r, c+1);
             }
+            sort(arr, r, c+1);
         }
         else {
             sort(arr, r-1, 0);

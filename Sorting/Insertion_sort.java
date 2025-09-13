@@ -3,9 +3,9 @@ package Sorting;
 import java.util.Arrays;
 
 public class Insertion_sort {
-    //we start from index 1, if the number is greater than its pevious then swap
+    //we start from index 1, if the previous number is greater than current then swap
     //if doesnt swap then break because the left side will already be sorted.
-    //do this for n-2 times because we need only 4 n-1 iterations to sort the array.
+    //do this for n-2 times because we need only n-1 iterations to sort the array.
     //each time the number is being inserted into the correct position.
 
     static void swap(int[] arr, int a,int b) {

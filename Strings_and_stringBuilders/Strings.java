@@ -32,7 +32,7 @@ public class Strings {
 
         // String Concatenation
 
-        System.out.println('a' + 'b');        //char is converted to unidode integer value then added.
+        System.out.println('a' + 'b');        //char is converted to unicode integer value then added.
         
         System.out.println("a" + "b");      //strings are added
         
