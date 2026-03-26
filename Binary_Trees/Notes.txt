@@ -1,0 +1,65 @@
+Trees are a non-linear data structure that consists of nodes connected by edges. Each node contains a value and may have zero or more child nodes. The topmost node is called the root, and nodes with no children are called leaves.
+
+---------------------------
+
+A binary tree is a specific type of tree where each node has at most two children, referred to as the left child and the right child. This structure allows for efficient searching, insertion, and deletion operations.
+
+---------------------------
+
+operations in a binary tree include:
+1. Insertion: Adding a new node to the tree while maintaining the binary tree properties.
+2. Deletion: Removing a node from the tree while ensuring the structure remains valid.
+3. Traversal: Visiting all the nodes in a specific order (pre-order, in-order, post-order).
+4. Searching: Finding a specific value in the tree.
+
+---------------------------
+
+Operations in a binary tree take O(log n) time on average for balanced trees, but can degrade to O(n) in the worst case (e.g., when the tree becomes a linked list). Traversal operations typically take O(n) time since all nodes need to be visited.
+
+---------------------------
+
+Terminology:
+- Node: The basic unit of a tree that contains a value and references to its child nodes(left and right). 
+- Root: The topmost node in the tree.
+- Parent: A node that has one or more child nodes.
+- Child: A node that is a descendant of another node (the parent).
+- Sibling: Nodes that share the same parent.
+- Size: The total number of nodes in the tree.
+- Edge: The connection between two nodes in the tree.
+- Leaf: A node that has no children.
+- Height: The number of edges on the longest path from the root to a leaf node in the tree.
+- Level: The number of edges from the root to the node of interest in the tree.
+- Degree: The number of children a node has. In a binary tree, the degree can be 0, 1, or 2.
+
+---------------------------
+
+Types of binary trees:
+1. Complete Binary Tree: A binary tree in which all levels are completely filled except possibly the last level, which is filled from left to right.
+
+2. Full Binary Tree: A binary tree in which every node has either 0 or 2 children.
+
+3. Perfect Binary Tree: A binary tree in which all internal nodes have two children and all leaves are at the same level.
+
+4. Height Balanced Binary Tree: A binary tree in which the difference in height between the left and right subtrees of any node is no more than one.
+
+5. Skewed Binary Tree: A binary tree in which all nodes have only one child, either left or right.
+
+6. Binary Search Tree (BST): A binary tree in which for each node, the value of all nodes in the left subtree is less than the node's value, and the value of all nodes in the right subtree is greater than the node's value.
+
+---------------------------
+
+Properties of binary trees that will be useful for solving problems:
+1. If height of a perfect binary tree is h, then the maximum number of nodes in the tree is 2^(h+1) - 1.
+2. The number of leaf nodes in a perfect binary tree is 2^h, where h is the height of the tree.
+3. The total number of internal nodes in a perfect binary tree is 2^h - 1, where h is the height of the tree.
+4. If there are N leaves in a binary tree then the minimum height of the tree is log2(N) and the maximum height of the tree is N-1.
+5. If there are N number of leaf nodes in a strict binary tree then the total number of internal nodes in the tree is N+1.
+
+---------------------------
+
+Traversal methods:
+1. Pre-order Traversal: Visit the root node first, then recursively visit the left subtree, followed by the right subtree. (Root -> Left -> Right)
+
+2. In-order Traversal: Recursively visit the left subtree first, then visit the root node, followed by the right subtree. (Left -> Root -> Right)
+
+3. Post-order Traversal: Recursively visit the left subtree first, then the right subtree, and finally visit the root node. (Left -> Right -> Root)
