@@ -1,0 +1,7 @@
+String Buffer is a mutable sequence of characters. It is used when we need to modify the string frequently.
+Advantages of String Buffer:
+1. It is mutable, which means we can modify the string without creating a new object.
+2. It is thread-safe, which means it can be used in a multi-threaded environment without any synchronization issues.
+3. It is more efficient than String when we need to modify the string frequently, as it does not create a new object every time we modify the string.
+
+=> String buffer is thread safe so it is slower than String Builder. String Builder is not thread safe but it is faster than String Buffer. So if we need to modify the string frequently and we are not working in a multi-threaded environment, then we should use String Builder. If we are working in a multi-threaded environment, then we should use String Buffer.

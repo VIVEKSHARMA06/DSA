@@ -50,7 +50,7 @@ Types of binary trees:
 
 Properties of binary trees that will be useful for solving problems:
 1. If height of a perfect binary tree is h, then the maximum number of nodes in the tree is 2^(h+1) - 1.
-2. The number of leaf nodes in a perfect binary tree is 2^h, where h is the height of the tree.
+2. The number of leaf nodes in a perfect binary tree at max can be 2^h, where h is the height of the tree.
 3. The total number of internal nodes in a perfect binary tree is 2^h - 1, where h is the height of the tree.
 4. If there are N leaves in a binary tree then the minimum height of the tree is log2(N) and the maximum height of the tree is N-1.
 5. If there are N number of leaf nodes in a strict binary tree then the total number of internal nodes in the tree is N+1.

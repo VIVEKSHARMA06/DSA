@@ -25,7 +25,7 @@ public class BinaryTree {
         populate(sc,root);
     }
 
-    public void populate(Scanner sc, Node node) {
+    private void populate(Scanner sc, Node node) {
         System.out.println("Do you want to enter left of " + node.value);
         boolean left = sc.nextBoolean();
         if (left) {
@@ -49,7 +49,7 @@ public class BinaryTree {
         display(root,0);
     }
 
-    public void display (Node node, int level) {
+    private void display (Node node, int level) {
         if (node==null) {
             return;
         }
