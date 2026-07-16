@@ -35,6 +35,7 @@ public class Arraylist {
             }
         }
         System.out.println(list);
+        System.out.println(list);
         sc.close();
     }
 }
