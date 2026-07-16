@@ -10,6 +10,20 @@ public class LinkedList {
         this.size = 0;
     }
 
+    private class Node {
+        private int value;
+        private Node next;
+
+        Node (int value) {
+            this.value=value;
+        }
+
+        Node (int value, Node node) {
+            this.value = value;
+            this.next = node;
+        }
+    }
+
     // print linked list
     public void display() {
         Node temp = head;
@@ -191,20 +205,6 @@ public class LinkedList {
         tail.next = node;
         tail = node;
         tail.next = null;
-    }
-
-    private class Node {
-        private int value;
-        private Node next;
-
-        Node (int value) {
-            this.value=value;
-        }
-
-        Node (int value, Node node) {
-            this.value = value;
-            this.next = node;
-        }
     }
 
 }

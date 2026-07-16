@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class Code {
     //numbers are from 1 to n
-    //if the number at arr[i] is at i-1 position then its correct, i++
+    //if the number arr[i] is at i-1 position then its correct, i++
     //if not then swap and continue to swap until the number at i is correct.
 
     static void swap(int[] arr, int a,int b) {

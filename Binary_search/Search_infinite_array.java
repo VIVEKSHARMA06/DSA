@@ -9,7 +9,7 @@ public class Search_infinite_array {
         int e = 1;
         while (arr[e]<target) {
             int temp = e;               
-            e = e + (e-s+1)*2;          //(e-s+1)* is the size of the new range to be searched.
+            e = e + (e-s+1)*2;          //(e-s+1)*2 is the size of the new range to be searched.
             s= temp+1;
         }
         return bs(arr, s, e, target);
