@@ -11,9 +11,9 @@ public class Main {
         StringBuffer sb = new StringBuffer();
         sb.append("Hello");
 
-        StringBuffer sb2 = new StringBuffer("H   e l  lo ");
+        // StringBuffer sb2 = new StringBuffer("H   e l  lo ");
         
-        StringBuffer sb3 = new StringBuffer(50);
+        // StringBuffer sb3 = new StringBuffer(50);
         // This constructor creates a StringBuffer with an initial capacity of 50 characters. The buffer can hold up to 50 characters before it needs to be resized.
 
         sb.append(" World!");

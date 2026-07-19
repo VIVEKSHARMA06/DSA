@@ -33,5 +33,42 @@ public class SegmentTrees {
         node.left = constructTree(arr, start, mid);
         node.right = constructTree(arr, mid+1, end);
         node.data =  node.left.data + node.right.data;
-        return node;     }
+        return node;     
+    }
+
+    //query
+    public int query(int qsi, int qei) {
+        return query(this.root, qsi, qei);
+    }
+
+    private int query(Node node, int qsi, int qei) {
+        if (node.startInterval >= qsi && node.endInterval <= qei) {
+            return node.data;
+        }
+        else if (node.startInterval > qei || node.endInterval < qsi) {
+            return 0;
+        }
+        else {
+            return query(node.left, qsi, qei) + query(node.right, qsi, qei); 
+        }
+    } 
+
+    //update
+    public int update(int index, int value) {
+        return update(this.root, index, value);
+    }
+
+    private int update (Node node, int index, int value) {
+        if (node.startInterval < index && node.endInterval > index) {
+            if (node.startInterval==index && node.endInterval==index) {
+                node.data = value;
+                return node.data;
+            }
+            else {
+                node.data = update(node.left, index, value) + update(node.right, index, value);
+                return node.data;
+            }
+        }
+        return node.data;
+    }
 }
