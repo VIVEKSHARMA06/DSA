@@ -3,8 +3,6 @@ package Leetcode;
 import java.util.ArrayDeque;
 import java.util.Queue;
 
-import Arrays_and_Arraylist.Arraylist;
-
 public class leetcode_225 {
     class MyStack {
         Queue<Integer> q1 = new ArrayDeque<>();
