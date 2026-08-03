@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Other;
 
 import java.util.ArrayDeque;
 import java.util.Queue;

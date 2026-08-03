@@ -1,4 +1,4 @@
-package Leetcode;
+package Leetcode.Other;
 
 public class Nth_Root_of_Integer {
 
