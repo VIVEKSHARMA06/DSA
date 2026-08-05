@@ -2,7 +2,6 @@ package Recursion.String_Ques.Permutation;
 
 public class String_permutation {
 
-
     public static void func(String p, String up) {
         if (up.isEmpty()) {
             System.out.println(p);
@@ -10,8 +9,8 @@ public class String_permutation {
         }
         char ch = up.charAt(0);
 
-        for (int i=0;i<=p.length();i++) {
-            func(p.substring(0,i)+ch+p.substring(i,p.length()),up.substring(1));
+        for (int i = 0; i <= p.length(); i++) {
+            func(p.substring(0, i) + ch + p.substring(i, p.length()), up.substring(1));
         }
     }
 
