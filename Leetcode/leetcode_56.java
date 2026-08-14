@@ -16,7 +16,7 @@ public class leetcode_56 {
             arr[0] = intervals[i][0];
             arr[1] = intervals[i][1];
 
-            if (ans.get(ans.size() - 1)[0] <= arr[0] && ans.get(ans.size() - 1)[1] >= arr[0]) {
+            if (ans.get(ans.size()- 1)[0] <= arr[0] && ans.get(ans.size() - 1)[1] >= arr[0]) {
                 ans.set(ans.size() - 1,
                         new int[] { ans.get(ans.size() - 1)[0], Math.max(arr[1], ans.get(ans.size() - 1)[1]) });
             } else {
