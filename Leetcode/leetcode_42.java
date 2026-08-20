@@ -1,6 +1,6 @@
 package Leetcode;
 
-import javax.management.MBeanRegistration;
+// import javax.management.MBeanRegistration;
 
 public class leetcode_42 {
 
@@ -24,20 +24,19 @@ public class leetcode_42 {
 
     public int trap(int[] height) {
         int left = 1;
-        int right = height.length-2;
-        int leftMax=height[0];
-        int rightMax=height[height.length-1];
-        int water=0;
+        int right = height.length - 2;
+        int leftMax = height[0];
+        int rightMax = height[height.length - 1];
+        int water = 0;
 
         while (left < right) {
-            leftMax=Math.max(height[left],leftMax);
-            rightMax=Math.max(height[right],rightMax);
+            leftMax = Math.max(height[left], leftMax);
+            rightMax = Math.max(height[right], rightMax);
 
-            if (leftMax<rightMax){
-                water+=leftMax-height[left];
+            if (leftMax < rightMax) {
+                water += leftMax - height[left];
                 left++;
-            }
-            else{
+            } else {
                 water += rightMax - height[right];
                 right--;
             }
