@@ -1,30 +1,30 @@
 package Leetcode;
 
-import java.util.HashMap;
+// import java.util.HashMap;
 
 public class leetcode_205 {
     // HashMap
     // public boolean isIsomorphic(String s, String t) {
-    //     if (s.length() != t.length())
-    //         return false;
+    // if (s.length() != t.length())
+    // return false;
 
-    //     HashMap<Character, Character> map = new HashMap<>();
+    // HashMap<Character, Character> map = new HashMap<>();
 
-    //     for (int i = 0; i < s.length(); i++) {
-    //         if (!map.containsKey(s.charAt(i))) {
-    //             if (map.containsValue(t.charAt(i))) {
-    //                 return false;
-    //             } else {
-    //                 map.put(s.charAt(i), t.charAt(i));
-    //             }
-    //         }
-    //         if (map.get(s.charAt(i)) != t.charAt(i)) {
-    //             return false;
-    //         } else
-    //             continue;
-    //     }
+    // for (int i = 0; i < s.length(); i++) {
+    // if (!map.containsKey(s.charAt(i))) {
+    // if (map.containsValue(t.charAt(i))) {
+    // return false;
+    // } else {
+    // map.put(s.charAt(i), t.charAt(i));
+    // }
+    // }
+    // if (map.get(s.charAt(i)) != t.charAt(i)) {
+    // return false;
+    // } else
+    // continue;
+    // }
 
-    //     return true;
+    // return true;
     // }
 
     // Array optimized
